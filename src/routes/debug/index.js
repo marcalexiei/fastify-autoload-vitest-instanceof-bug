@@ -1,5 +1,5 @@
 import fp from "fastify-plugin";
-import { SignatureError } from "../../SignatureError.ts";
+import { SignatureError } from "../../SignatureError.js";
 
 export default fp((fastify) => {
   fastify.route({

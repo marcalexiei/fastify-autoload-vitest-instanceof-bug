@@ -1,13 +1,12 @@
 import path from "node:path";
 
-import type fastify from "fastify";
-import { SignatureError } from "./SignatureError.ts";
+import { SignatureError } from "./SignatureError.js";
 import autoload from "@fastify/autoload";
-import route from "./routes/debug/index.ts";
+import route from "./routes/debug/index.js";
 
 const ENABLE_AUTOLOAD = process.env.AUTOLOAD === "false" ? false : true;
 
-export const build = async (app: fastify.FastifyInstance): Promise<void> => {
+export const build = async (app) => {
   if (ENABLE_AUTOLOAD) {
     app.register(autoload, {
       dir: path.join(import.meta.dirname, "routes"),

@@ -1,16 +1,15 @@
-import { beforeAll, describe, expect, it } from "vitest";
-import type { FastifyInstance } from "fastify";
+import { beforeAll, expect, describe, it } from "vitest";
 import fastify from "fastify";
 
-import { build } from "../src/app.ts";
+import { build } from "../src/app.js";
 
 describe("admin", () => {
-  let app: FastifyInstance;
+  let app;
   beforeAll(async () => {
     app = fastify();
     await build(app);
 
-    return (): void => {
+    return () => {
       app.close();
     };
   });
