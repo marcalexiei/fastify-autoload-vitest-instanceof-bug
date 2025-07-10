@@ -1,0 +1,15 @@
+# libraries
+node_modules
+.swc
+
+# test
+coverage
+
+# output
+dist
+
+# environment
+.env
+
+# System files
+**/.DS_Store

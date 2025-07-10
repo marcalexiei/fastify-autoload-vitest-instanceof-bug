@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.ts",
+    "test": "vitest ./tests --run"
+  },
+  "imports": {
+    "#helpers/*": "./src/helpers/*.ts",
+    "#models/*": "./src/models/*.ts",
+    "#plugins/*": "./src/plugins/*.ts"
+  },
+  "dependencies": {
+    "@fastify/autoload": "^6.3.1",
+    "fastify": "5.4.0",
+    "fastify-plugin": "5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.0.12",
+    "pino-pretty": "13.0.0",
+    "vitest": "^3.2.4"
+  }
+}
