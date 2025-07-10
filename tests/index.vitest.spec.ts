@@ -4,7 +4,7 @@ import fastify from "fastify";
 
 import { build } from "../src/app.ts";
 
-describe("admin", () => {
+describe("debugging instanceof", () => {
   let app: FastifyInstance;
   beforeAll(async () => {
     app = fastify();

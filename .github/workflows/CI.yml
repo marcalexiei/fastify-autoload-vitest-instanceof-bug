@@ -30,8 +30,8 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Test (AUTOLOAD=false)
-        run: AUTOLOAD=false npm run test
+      - name: Test with Node test runner
+        run: npm run test:node
 
-      - name: Test (AUTOLOAD=true)
-        run: AUTOLOAD=true npm run test
+      - name: Test with Vitest
+        run: npm run test:vitest

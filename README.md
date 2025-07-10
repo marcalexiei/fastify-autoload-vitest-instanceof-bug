@@ -10,30 +10,14 @@
    npm i
    ```
 
-## With autoload plugin
-
-### Run server
+## Run test with vitest
 
 ```sh
-npm run start
+npm run test:vitest
 ```
 
-### Run tests
+## Run test with node
 
 ```sh
-npm run test
-```
-
-## **Without** autoload plugin
-
-### Run server
-
-```sh
-AUTOLOAD=false npm run start
-```
-
-### Run tests
-
-```sh
-AUTOLOAD=false npm run test
+npm run test:node
 ```

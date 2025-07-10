@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.ts",
-    "test": "vitest ./tests --run"
+    "test:vitest": "vitest ./tests/index.vitest.spec.ts --run",
+    "test:node": "node --test ./tests/index.node.spec.ts"
   },
   "imports": {
     "#helpers/*": "./src/helpers/*.ts",

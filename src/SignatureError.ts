@@ -1,6 +1,7 @@
-import createError from "@fastify/error";
+export class SignatureError extends Error {
+  override name = "SignatureError" as const;
 
-export const SignatureError = createError<[string]>(
-  "SIGNATURE_ERROR",
-  "Bad signature"
-);
+  constructor(message: string) {
+    super(message);
+  }
+}
