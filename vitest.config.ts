@@ -6,5 +6,10 @@ export default defineConfig({
     sequence: {
       concurrent: false,
     },
+    server: {
+      deps: {
+        inline: ["@fastify/autoload"],
+      },
+    },
   },
 });

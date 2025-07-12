@@ -21,3 +21,8 @@ npm run test:vitest
 ```sh
 npm run test:node
 ```
+
+## Related issues
+
+- <https://github.com/fastify/fastify-autoload/issues/472>
+- <https://github.com/vitest-dev/vitest/issues/8289>
